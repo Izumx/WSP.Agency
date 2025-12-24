@@ -12,6 +12,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Mobile Menu Toggle
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    if (burger) {
+        burger.addEventListener('click', () => {
+            // Toggle Nav
+            nav.classList.toggle('active');
+            burger.classList.toggle('active');
+
+            // Animate Links
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+        });
+    }
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                burger.classList.remove('active');
+                navLinks.forEach(l => l.style.animation = '');
+            }
+        });
+    });
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
         threshold: 0.1,
@@ -29,15 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => observer.observe(el));
 
-    // Counter Animation for Stats
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                // Could add number counting animation logic here if needed
-            }
-        });
-    });
+    // Stats visibility
+    const statsElements = document.querySelectorAll('.stat-item');
+    statsElements.forEach(el => observer.observe(el));
 
     // Contact Form Handling
     const form = document.getElementById('contactForm');
@@ -47,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             const btn = form.querySelector('button');
-            const originalText = btn.innerText;
 
             // --- GOOGLE SHEETS CONFIGURATION ---
             const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyokqyd0ENpoJI1EpA6X37TY8cqjXsPXUxahy5xQ0oBcCPGbXYeRUkyDUxVW1w8VD8sMQ/exec';
@@ -55,10 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const formData = {
                 name: document.getElementById('name').value,
-                // Mapping new inputs to the keys the Google Script expects:
-                email: document.getElementById('contact_info').value, // Column C (Might be cleared if not email)
-                service: document.getElementById('project').value,    // Column D
-                // Combine Budget and Contact into Column E to ensure contact info is saved even if Column C rejects it
+                email: document.getElementById('contact_info').value,
+                service: document.getElementById('project').value,
                 message: `Budget: ${document.getElementById('budget').value} | Contact: ${document.getElementById('contact_info').value}`
             };
 
@@ -68,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.disabled = true;
 
             try {
-                // Send to Google Apps Script
                 await fetch(SCRIPT_URL, {
                     method: 'POST',
                     mode: 'no-cors',
@@ -78,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify(formData)
                 });
 
-                // Assume success if no network error occurred
                 showSuccess(btn, 'Sent!');
 
             } catch (error) {

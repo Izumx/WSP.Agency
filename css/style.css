@@ -184,6 +184,10 @@ nav {
     align-items: center;
 }
 
+.burger {
+    display: none;
+}
+
 .logo {
     font-size: 2rem;
     font-weight: 900;
@@ -557,6 +561,14 @@ select.pill-input {
     padding: 80px 0;
 }
 
+.stat-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
 .stats h3 {
     color: var(--accent-color);
     font-size: 5rem;
@@ -641,26 +653,184 @@ select.pill-input {
     }
 }
 
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 10vw, 8rem);
+    }
+
+    .footer-logo {
+        font-size: 5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .burger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: var(--text-color);
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    /* Burger Animation when active */
+    .burger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -7px);
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 100vh;
+        top: 0px;
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1000;
+        gap: 30px;
+        border-left: var(--border-width) solid var(--text-color);
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .nav-links a {
+        font-size: 2rem;
+    }
+
+    .nav-cta {
+        display: none !important;
+    }
+
+    .hero {
+        padding-top: 100px;
+        text-align: center;
+        justify-content: center;
+    }
+
     .hero h1 {
         font-size: 3.5rem;
     }
 
-    .contact-container {
-        grid-template-columns: 1fr;
+    .hero p {
+        font-size: 1.2rem;
+        margin: 0 auto 40px;
     }
 
-    .contact-info {
-        border-right: none;
-        border-bottom: var(--border-width) solid var(--text-color);
-    }
-
-    .nav-links {
+    .doodle {
         display: none;
     }
 
-    .logo {
-        font-size: 1.5rem;
+    .hero .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .marquee-content {
+        font-size: 2rem;
+    }
+
+    .stats h3 {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .service-card {
+        padding: 30px;
+        min-height: 250px;
+    }
+
+    .service-card h3 {
+        font-size: 2rem;
+    }
+
+    .portfolio-image {
+        height: 300px;
+    }
+
+    .contact-heading-new {
+        font-size: 3.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 4rem;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .highlight-black {
+        padding: 0 10px;
+    }
+
+    .pill-input {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    .btn-submit {
+        font-size: 1.2rem;
+    }
+
+    .stats .stat-container {
+        gap: 20px;
+    }
+
+    .stat-item {
+        flex: 1 1 150px;
+    }
+
+    .stat-item h3 {
+        font-size: 2.5rem;
     }
 }
 
