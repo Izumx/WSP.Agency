@@ -1,0 +1,1593 @@
+@font-face {
+  font-family: "Regular";
+  src: url("fonts/Ferrari-SansRegular.woff2") format(woff2);
+}
+@font-face {
+  font-family: "Medium";
+  src: url("fonts/Ferrari-SansMedium.woff2") format(woff2);
+}
+@font-face {
+  font-family: "Open Regular";
+  src: url("fonts/OpenSans-Regular-webfont.woff") format(woff);
+}
+/* CONTROLS */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  position: absolute;
+  bottom: 50px;
+  left: 620px;
+}
+.control button {
+  border: none;
+  background-color: #ff333300;
+  color: white;
+  font-size: 90px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+/* BODY */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* height: 100%;
+  overflow: hidden; */
+}
+/* HEAD */
+
+.head {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  color: white;
+  gap: 40px;
+  padding: 20px;
+}
+.head img {
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+.head h2 {
+  font-family: "Regular";
+  font-weight: 200;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.main-video video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.header {
+  color: white;
+  text-align: center;
+  margin-top: 470px;
+  margin-bottom: 140px;
+}
+.header h2 {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.833);
+  letter-spacing: 1px;
+}
+.header h1 {
+  font-family: "Regular";
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 2px;
+  width: 100%;
+  margin-top: 17px;
+  margin-bottom: 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+}
+.row p {
+  text-transform: uppercase;
+  font-family: "Regular";
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.851);
+  margin-top: 28px;
+}
+.dis img {
+  width: 45px;
+  height: 45px;
+  margin-left: 3px;
+  opacity: 0;
+  margin-top: 12px;
+  margin-right: 8px;
+}
+.row:hover img {
+  opacity: 1;
+}
+.dis:hover img {
+  opacity: 1;
+}
+.dis span:hover img {
+  opacity: 1;
+}
+.dis {
+  position: relative;
+  cursor: pointer;
+}
+.dis span {
+  font-family: "Regular";
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* BODY */
+.choice {
+  width: 100%;
+  height: 2000px;
+  display: grid;
+  margin-bottom: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  font-family: "Regular";
+}
+.box img:hover {
+  transform: scale(1.15);
+}
+.wow h1 {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+}
+.wow h3 {
+  color: white;
+  margin-top: 470px;
+  margin-bottom: 0;
+}
+.box h3,
+h1 {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.box6 img {
+  margin-bottom: 400px;
+  object-fit: none;
+  object-position: center bottom;
+  width: 100%;
+  height: max-content;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  transition: transform 0.6s ease;
+}
+
+.more {
+  margin-bottom: 30px;
+  font-family: "Regular";
+}
+
+/* NEWSLETTER */
+.newsletter button {
+  background: radial-gradient(circle, #ff8a8a 0%, #ff3333 100%);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  font-family: "Regular";
+  text-transform: uppercase;
+  width: 300px;
+}
+.newsletter button:hover {
+  background: rgb(227, 18, 18);
+}
+.newsletter {
+  font-family: "Regular";
+  background-color: rgb(40, 40, 40);
+  padding: 100px;
+  color: white;
+  text-align: center;
+}
+.newsletter h2 {
+  margin: 0;
+  font-size: 19px;
+}
+.newsletter p {
+  font-size: 13px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.917);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* FOOTER */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: "Regular";
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 100px;
+  border-bottom: 1px solid gray;
+}
+.col .p {
+  font-size: 9px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.col .bas {
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+/* FOOT */
+.foot {
+  background-color: black;
+  color: white;
+  font-family: "Regular";
+  text-transform: uppercase;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding: 50px 200px 50px 150px;
+  gap: 50px;
+  border-bottom: 1px solid gray;
+}
+.rows {
+  display: flex;
+  gap: 20px;
+}
+.rows p {
+  margin: 0;
+  margin-top: 3px;
+}
+.rows img {
+  width: 20px;
+  height: 20px;
+}
+/* FOOT BOTTOM */
+.foot-bottom {
+  text-align: center;
+  font-family: "Regular";
+  color: white;
+  background-color: black;
+}
+.foot-bottom {
+  padding: 50px;
+}
+.paragraph p {
+  margin-top: 15px;
+  font-size: 8px;
+  line-height: 2;
+  color: gray;
+}
+.access p {
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* PRE_END */
+.pre-end {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-family: "Regular";
+  padding: 30px 50px 30px 150px;
+}
+.in-row {
+  display: flex;
+  gap: 40px;
+}
+.in-row p {
+  font-size: 9px;
+}
+.in-row span {
+  margin-left: 100px;
+}
+/* END */
+.end {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+}
+.end img {
+  width: 30px;
+}
+
+/* 
+PAGE1 STYlE --------------------------------- */
+
+/* HEAD */
+.video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.head-cars img {
+  width: 20px;
+  margin-left: 20px;
+  margin-right: 30px;
+  height: 26px;
+}
+.head-cars {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  color: white;
+  gap: 40px;
+  padding: 10px 0px;
+  background-color: rgb(40, 40, 40);
+}
+.head-cars button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-family: "Regular";
+  font-weight: 200;
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.head-cars h2 {
+  font-family: "Regular";
+  font-weight: 200;
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.line {
+  border-bottom: 3px solid white;
+}
+.line-up {
+  display: flex;
+  justify-content: center;
+  margin-top: 600px;
+  font-family: "Regular";
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: 100%;
+  color: white;
+  margin-bottom: 82px;
+}
+
+/* CARS */
+.car {
+  padding: 50px 50px;
+  height: 600px;
+}
+.car1 {
+  background-color: rgb(255, 255, 255);
+}
+.row-car {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.row-car img {
+  opacity: 0;
+  transition: 1000s;
+}
+
+.car:hover .row-car img {
+  opacity: 1;
+  transition: 1s;
+}
+.row-dis {
+  opacity: 0;
+  transition: 1000s;
+}
+.car:hover .row-dis {
+  opacity: 1;
+  transition: 1s;
+}
+
+.info-car {
+  margin-top: 150px;
+  width: 400px;
+}
+.name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Regular";
+  text-transform: uppercase;
+  font-size: 13px;
+  color: red;
+}
+.img-car img {
+  width: 750px;
+}
+.info-car img {
+  margin-bottom: 60px;
+  width: 350px;
+}
+.lines {
+  width: 130px;
+  border-bottom: 1px solid red;
+}
+.row-dis {
+  display: flex;
+  gap: 10px;
+  font-family: "Regular";
+  margin-bottom: 20px;
+}
+.row-dis span {
+  border: 2px solid gray;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+.row-dis span:hover {
+  border: 2px solid red;
+  transition: 1s;
+}
+.row-dis p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* CAR-2 */
+.car2,
+.car3,
+.car4,
+.car5,
+.car6,
+.car7,
+.car8,
+.car9,
+.car10 {
+  background-color: rgb(48, 46, 46);
+  border-bottom: 1px solid gray;
+}
+
+.car2 .row-dis p,
+.car3 .row-dis p,
+.car4 .row-dis p,
+.car5 .row-dis p,
+.car6 .row-dis p,
+.car7 .row-dis p,
+.car8 .row-dis p,
+.car9 .row-dis p,
+.car10 .row-dis p {
+  color: white;
+}
+.car2,
+.car3,
+.car4,
+.car5,
+.car6,
+.car7,
+.car8,
+.car9,
+.car10 .row-dis {
+  color: white;
+}
+/* SPECIAL SERIES CARS */
+.series h1 {
+  font-family: "Regular";
+}
+.car11 {
+  padding-bottom: 140px;
+  border-bottom: 1px solid gray;
+}
+.car11,
+.car12,
+.car13,
+.car14,
+.car15 {
+  border-bottom: 1px solid gray;
+  height: 500px;
+}
+.car16 {
+  height: 500px;
+}
+.car11,
+.car12,
+.car13,
+.car14,
+.car15,
+.car16 .row-dis {
+  color: rgb(0, 0, 0);
+}
+.row-dis p {
+  color: black;
+}
+
+/* ICONA CARS */
+.car17,
+.car18,
+.car19 {
+  border-bottom: 1px solid gray;
+}
+
+/* PAGE-2 RACING FORMULA1 */
+
+.team {
+  display: flex;
+  position: relative;
+}
+.f1 {
+  overflow: hidden;
+  height: 660px;
+}
+.f1-1 img {
+  z-index: -1;
+  width: 50vw;
+}
+.f1-1:hover img {
+  transform: scale(1.25);
+}
+.f1-2 img {
+  flex: 1;
+  z-index: -1;
+  width: 50vw;
+  position: relative;
+}
+.f1-2:hover img {
+  transform: scale(1.15);
+}
+.f1-1 h1 {
+  position: absolute;
+  z-index: 6;
+  bottom: 100px;
+  font-family: "Regular";
+  color: white;
+  left: 160px;
+}
+.f1-2 h1 {
+  position: absolute;
+  z-index: 6;
+  bottom: 100px;
+  font-family: "Regular";
+  color: white;
+  left: 960px;
+}
+.f1-1 .discover-row {
+  position: absolute;
+  z-index: 6;
+  bottom: 70px;
+  font-family: "Regular";
+  color: white;
+  display: flex;
+  gap: 10px;
+  left: 300px;
+}
+.f1-2 .discover-row {
+  position: absolute;
+  z-index: 6;
+  bottom: 70px;
+  font-family: "Regular";
+  color: white;
+  display: flex;
+  gap: 10px;
+  left: 1060px;
+}
+.discover-row span {
+  border: 2px solid gray;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+.discover-row span:hover {
+  border: 2px solid red;
+  transition: 1s;
+}
+.discover-row p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* LATEST NEWS */
+.latest-news h1 {
+  text-align: center;
+  font-family: "Regular";
+  margin: 0;
+  color: white;
+  margin-bottom: 40px;
+}
+.latest-news {
+  background-image: url(https://cdn.ferrari.com/cms/network/media/img/resize/6798defede8a5f007193ab72-ferrari%20f1%20-%20hp%20-bk-desktop?width=1920&height=0);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  position: relative;
+}
+.news {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.new {
+  overflow: hidden;
+  height: 520px;
+  width: 400px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.new .share {
+  position: absolute;
+  z-index: 4;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+}
+.new .img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  object-position: top;
+  z-index: -1;
+}
+.new:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+}
+.race-info {
+  z-index: 60;
+}
+.row-name {
+  display: flex;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: "Regular";
+  color: red;
+  align-items: center;
+  gap: 10px;
+}
+.row-name span {
+  border-bottom: 1px solid red;
+  width: 50px;
+}
+.race-info h1 {
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+}
+.view-all {
+  display: flex;
+  position: absolute;
+  z-index: 6;
+  font-family: "Regular";
+  color: rgb(255, 255, 255);
+  right: 100px;
+  gap: 10px;
+  bottom: 40px;
+}
+.view-all span {
+  border: 2px solid gray;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+.view-all span:hover {
+  border: 2px solid red;
+  transition: 1s;
+}
+.view-all p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* NEXT RACE START IN */
+.gallery {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-family: "Regular";
+  scrollbar-width: none;
+}
+.next-race {
+  background-color: black;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+.bashka h1 {
+  color: white;
+  font-family: "Regular";
+  margin: 0;
+  margin-bottom: 40px;
+}
+.chemp .place {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.place {
+  width: 365px;
+  height: 222px;
+  position: relative;
+}
+.chemp:hover .place {
+  /* transform: scale(1.1); увеличиваем картинку */
+}
+.chemp:hover {
+  box-shadow: 5px 5px 100px rgba(255, 0, 0, 0.8);
+  transform: scale(1.05);
+  z-index: 2;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.chemp {
+  padding: 15px;
+  transition: transform 0.3s;
+}
+.flag-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.flag {
+  width: 60px;
+  height: 30px;
+  margin-top: 6px;
+}
+.info-chemp p {
+  color: white;
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.info-chemp h2 {
+  color: white;
+  margin: 0;
+  font-size: 19px;
+}
+.dis-race {
+  display: flex;
+  position: absolute;
+  z-index: 6;
+  font-family: "Regular";
+  color: rgb(255, 255, 255);
+  right: 20px;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.516);
+  padding: 5px 10px;
+  border-radius: 20px;
+  top: 80px;
+}
+.dis-race span {
+  border: 2px solid rgba(255, 255, 255, 0.698);
+  padding: 3px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dis-race span:hover {
+  border: 2px solid red;
+  transition: 1s;
+}
+.dis-race p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 8px;
+}
+/* MEDIA */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+    height: 100%;
+  }
+  .head {
+    display: flex;
+    gap: 10px;
+  }
+  .head img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .head h2 {
+    font-size: 8px;
+    margin: 0;
+    padding: 5px;
+  }
+  .controls {
+    bottom: 40px;
+    left: 150px;
+    gap: 20px;
+  }
+  .choice {
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(6, 600px);
+    height: 3600px;
+  }
+  .box img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: start;
+    padding: 30px;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 30px;
+  }
+  .pre-end {
+    padding: 30px;
+  }
+  .in-row {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  /* CARS */
+  .img-car img {
+    width: 400px;
+  }
+  .car {
+    padding: 20px;
+    height: 700px;
+  }
+  .row-car {
+    display: flex;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .info-car {
+    margin-top: 0px;
+  }
+  .row-dis {
+  }
+
+  .info-car {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .car11,
+  .car12,
+  .car13,
+  .car14,
+  .car15,
+  .car16 .row-dis {
+    color: rgb(0, 0, 0);
+  }
+
+  .car2,
+  .car3,
+  .car4,
+  .car5,
+  .car6,
+  .car7,
+  .car8,
+  .car9,
+  .car10 .row-dis {
+    color: white;
+  }
+  .head-cars {
+    gap: 10px;
+  }
+  .head-cars h2 {
+    font-size: 8px;
+  }
+  .head-cars button {
+    font-size: 8px;
+  }
+  .head-cars img {
+    margin-right: 5px;
+  }
+  /* FORMULA - 1 -------------------------------- */
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .f1-1,
+  .f1-2 {
+    width: 480px;
+    overflow: hidden;
+    height: 400px;
+  }
+  .f1 img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .f1-1 h1 {
+    top: 300px;
+    left: 50px;
+  }
+  .f1-2 h1 {
+    top: 700px;
+    left: 50px;
+  }
+  .discover-row {
+    opacity: 0;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .latest-news {
+    height: 1600px;
+  }
+  .view-all {
+    right: 30px;
+  }
+}
+
+/* page-3 */
+.fera-logo img {
+  filter: grayscale(100%) brightness(0);
+  width: 30px;
+  height: 40px;
+}
+.fera-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.clothes-head {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-family: "Regular";
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 20px;
+  cursor: pointer;
+}
+.clothes-head button {
+  font-family: "Regular";
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 20px;
+  cursor: pointer;
+  padding: 0;
+  background-color: rgba(240, 255, 255, 0);
+  border: 0;
+}
+.clothes-head button:hover {
+  color: red;
+}
+.clothes-head p:hover {
+  color: red;
+}
+.arrivals {
+  font-family: "Medium";
+  font-size: 10px;
+  margin: 0;
+}
+/* CLOTHES */
+.clothes {
+  padding-top: 50px;
+}
+.odezhda {
+  width: 300px;
+  height: 555px;
+  position: relative;
+}
+.item {
+  width: 300px;
+  height: 385px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* transition: 0.4s; */
+}
+.thing {
+  opacity: 1;
+  z-index: 1;
+}
+.reference {
+  opacity: 0;
+  z-index: 2;
+}
+.item:hover .thing {
+  opacity: 0;
+}
+.item:hover .reference {
+  opacity: 1;
+}
+
+.text p {
+  font-family: "Regular";
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.text span {
+  font-family: "Regular";
+}
+.text a {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  text-transform: uppercase;
+  font-family: "Regular";
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 2px 0px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.store {
+  padding: 0px 70px;
+}
+.clothes {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  column-gap: 30px;
+  margin-left: 20px;
+}
+
+/* SUBSCRIBE BY EMAIL */
+.subscribe {
+  background-color: rgb(240, 240, 240);
+  font-family: "Regular";
+  padding: 50px;
+}
+.subscribe input {
+  border: none;
+  background-color: rgba(240, 248, 255, 0);
+  width: 500px;
+  color: black;
+  font-weight: 500;
+  font-family: "Regular";
+  border-bottom: 1px solid rgb(44, 44, 44);
+  padding: 5px 0px;
+  margin-top: 20px;
+}
+.subscribe input::placeholder {
+  color: black;
+  font-family: "Regular";
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe button {
+  width: 200px;
+  border-radius: 40px;
+  padding: 15px;
+  border: 1px solid black;
+  color: black;
+  font-family: "Regular";
+  margin-top: 20px;
+}
+
+.subscribe button:hover {
+  background-color: #cc1d1d;
+  color: white;
+  border: 1px solid #cc1d1d;
+}
+.subscribe h1 {
+  font-size: 18px;
+  margin: 0;
+}
+.subscribe p {
+  font-size: 12px;
+  color: rgb(60, 60, 60);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  gap: 10px;
+}
+/* FOOTER */
+.footer3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: "Regular";
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 40px 100px;
+  border-bottom: 1px solid gray;
+}
+.col .p {
+  font-size: 9px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.col .bas {
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+/* FOOT */
+.foot3 {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: "Regular";
+  text-transform: uppercase;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding: 50px 200px 50px 150px;
+  gap: 50px;
+  border-bottom: 1px solid gray;
+}
+.rows {
+  display: flex;
+  gap: 20px;
+}
+.rows p {
+  margin: 0;
+  margin-top: 3px;
+}
+.rows3 img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%) brightness(0);
+}
+/* FOOT BOTTOM */
+.foot-bottom3 {
+  text-align: center;
+  font-family: "Regular";
+  color: rgb(0, 0, 0);
+  background-color: rgb(250, 250, 250);
+}
+.foot-bottom {
+  padding: 50px;
+}
+.paragraph p {
+  margin-top: 15px;
+  font-size: 8px;
+  line-height: 2;
+  color: gray;
+}
+.access p {
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* PRE_END */
+.pre-end3 {
+  background-color: rgb(225, 225, 225);
+  color: rgb(0, 0, 0);
+  font-family: "Regular";
+  padding: 30px 50px 30px 150px;
+}
+.in-row {
+  display: flex;
+  gap: 40px;
+}
+.in-row p {
+  font-size: 9px;
+}
+.in-row span {
+  margin-left: 100px;
+}
+/* END */
+.end3 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.end3 img {
+  width: 30px;
+}
+
+/* TABLET MEDIA */
+@media screen and (max-width: 768px) {
+  .choice {
+    grid-template-columns: 768px;
+    grid-template-rows: repeat(6, 700px);
+    height: 4200px;
+  }
+  .box img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+    padding: 30px;
+  }
+  .foot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 30px 200px;
+  }
+  .pre-end {
+    padding: 30px;
+  }
+  .in-row {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .controls {
+    left: 260px;
+    top: 680px;
+  }
+  .choice {
+    justify-content: center;
+  }
+  .in-row {
+    margin-left: 60px;
+  }
+  /* CARS */
+  .img-car img {
+    width: 600px;
+  }
+  .car {
+    padding: 20px;
+    height: 800px;
+  }
+  .row-car {
+    display: flex;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .info-car {
+    margin-top: 0px;
+  }
+  .row-dis {
+  }
+
+  .info-car {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .car11,
+  .car12,
+  .car13,
+  .car14,
+  .car15,
+  .car16 .row-dis {
+    color: rgb(0, 0, 0);
+  }
+
+  .car2,
+  .car3,
+  .car4,
+  .car5,
+  .car6,
+  .car7,
+  .car8,
+  .car9,
+  .car10 .row-dis {
+    color: white;
+  }
+  .head-cars {
+    gap: 40px;
+  }
+  .head-cars h2 {
+    font-size: 8px;
+  }
+  .head-cars button {
+    font-size: 8px;
+  }
+  .head-cars img {
+    margin-right: 20px;
+  }
+  /* FORMULA - 1 -------------------------------- */
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .f1-1,
+  .f1-2 {
+    width: 761px;
+    overflow: hidden;
+    height: 600px;
+  }
+  .f1 img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .f1-1 h1 {
+    top: 450px;
+    left: 150px;
+    font-size: 40px;
+  }
+  .f1-2 h1 {
+    top: 1070px;
+    left: 170px;
+    font-size: 40px;
+  }
+  .discover-row {
+    opacity: 0;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .latest-news {
+    height: 1300px;
+  }
+  .view-all {
+    right: 30px;
+  }
+  .new {
+    margin-bottom: 0;
+    height: 400px;
+  }
+  /* STORE */
+
+  .footer3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+    padding: 30px;
+  }
+  .foot3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 30px 200px;
+  }
+  .pre-end3 {
+    padding: 30px;
+  }
+  .clothes {
+    grid-template-columns: repeat(2, 300px);
+  }
+  .clothes-head {
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clothes-head p {
+    font-size: 10px;
+  }
+  .clothes-head {
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .clothes-head button {
+    font-size: 10px;
+  }
+  .clothes {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe input {
+    width: 370px;
+  }
+  .pre-end3 {
+    flex-wrap: wrap;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .foot3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 30px;
+  }
+  .footer3 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 30px;
+  }
+}
+/* MEDIA */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+    height: 100%;
+  }
+  .head {
+    display: flex;
+    gap: 10px;
+  }
+  .head img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .head h2 {
+    font-size: 8px;
+    margin: 0;
+    padding: 5px;
+  }
+  .controls {
+    bottom: 40px;
+    left: 150px;
+    gap: 20px;
+  }
+  .choice {
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(6, 600px);
+    height: 3600px;
+  }
+  .box img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: start;
+    padding: 30px;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 30px;
+  }
+  .pre-end {
+    padding: 30px;
+  }
+  .in-row {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  /* CARS */
+  .img-car img {
+    width: 350px;
+  }
+  .car {
+    padding: 20px;
+    height: 700px;
+  }
+  .row-car {
+    display: flex;
+    flex-direction: column;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .info-car {
+    margin-top: 0px;
+  }
+  .row-dis {
+  }
+
+  .info-car {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .car11,
+  .car12,
+  .car13,
+  .car14,
+  .car15,
+  .car16 .row-dis {
+    color: rgb(0, 0, 0);
+  }
+
+  .car2,
+  .car3,
+  .car4,
+  .car5,
+  .car6,
+  .car7,
+  .car8,
+  .car9,
+  .car10 .row-dis {
+    color: white;
+  }
+  .head-cars {
+    gap: 10px;
+  }
+  .head-cars h2 {
+    font-size: 8px;
+  }
+  .head-cars button {
+    font-size: 8px;
+  }
+  .head-cars img {
+    margin-right: 5px;
+  }
+  /* FORMULA - 1 -------------------------------- */
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .f1-1,
+  .f1-2 {
+    width: 480px;
+    overflow: hidden;
+    height: 400px;
+  }
+  .f1 img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .f1-1 h1 {
+    top: 300px;
+    left: 90px;
+    font-size: 25px;
+  }
+  .f1-2 h1 {
+    top: 700px;
+    left: 80px;
+    font-size: 25px;
+  }
+  .discover-row {
+    opacity: 0;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .latest-news {
+    height: 1300px;
+  }
+  .view-all {
+    right: 30px;
+  }
+}

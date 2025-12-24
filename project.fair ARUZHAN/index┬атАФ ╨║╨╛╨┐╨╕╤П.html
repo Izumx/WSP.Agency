@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferrari official website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="for-fera.png" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- HEAD -->
+      <div class="head">
+        <img src="logo.png" />
+        <h2 onclick="showPage('page2')">racing</h2>
+        <h2 onclick="showPage('page1')">sports cars</h2>
+        <h2 onclick="showPage('page3')">collections</h2>
+        <h2>impressions</h2>
+        <h2>about us</h2>
+      </div>
+      <!-- HEADER -->
+      <div class="header">
+        <h2 style="font-family: Regular" id="heading">Sports Cars</h2>
+        <h1 id="info">start your engine</h1>
+        <div class="row">
+          <p>discover</p>
+          <div class="dis">
+            <img src="process.svg" />
+            <span id="discoverBtn">></span>
+          </div>
+        </div>
+        <div class="main-video">
+          <video autoplay loop muted playsinline id="mainVideo">
+            <source src="video/amalfi.mp4" type="video/mp4" />
+          </video>
+          <div class="controls">
+            <div class="control">
+              <button class="videoButton" onclick="changeVideo(0)">.</button>
+            </div>
+            <div class="control">
+              <button class="videoButton" onclick="changeVideo(1)">.</button>
+            </div>
+            <div class="control">
+              <button class="videoButton" onclick="changeVideo(2)">.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHOICE -->
+      <h1 class="more">MORE</h1>
+      <div class="choice">
+        <div class="box box1">
+          <img src="store-man.jpeg" />
+          <div class="wow">
+            <h3>Collections</h3>
+            <h1>NEW ARRIVALS</h1>
+          </div>
+        </div>
+        <div class="box box2">
+          <img
+            src="https://cdn.ferrari.com/cms/network/media/img/resize/68b6cdd32b4c740020f6c76b-ferrari-magazine-2025-lauda-piero-ferrari-gate-desk?width=960&height=650"
+            style="height: 100%; width: 100%"
+          />
+          <div class="wow">
+            <h3>Magazine</h3>
+            <h1>A SPECIAL FRIEND</h1>
+          </div>
+        </div>
+        <div class="box box3">
+          <img
+            src="https://cdn.ferrari.com/cms/network/media/img/resize/68cd7541c155f200205689fa-ferrari-hypercar-2025-fuji-box-gate-desk?width=960&height=650"
+            style="height: 100%; width: 100%"
+          />
+          <div class="wow">
+            <h3>Endurance</h3>
+            <h1>6 HOURSF FUI 2025</h1>
+          </div>
+        </div>
+        <div class="box box4">
+          <img
+            src="https://cdn.ferrari.com/cms/network/media/img/resize/67b479ea8e935a0056834fe4-2025-ferrari-museum-supercars-gtw1-last?width=960&height=650"
+            style="height: 100%"
+          />
+          <div class="wow">
+            <h3>Ferrari Museums</h3>
+            <h1>SUPERCARS</h1>
+          </div>
+        </div>
+        <div class="box box5">
+          <img src="ye-car.jpeg" />
+          <div class="wow">
+            <h3>Ferrari Apoved</h3>
+            <h1>PRE-OWNED</h1>
+          </div>
+        </div>
+        <div class="box box6">
+          <img src="can.jpeg" />
+          <div class="wow">
+            <h3>Sports Cars</h3>
+            <h1>PAST MODELS</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="newsletter">
+        <h2>Newsletter</h2>
+        <p>Stay up to date with the latest news from the world of Ferrari.</p>
+        <button>Subscribe</button>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="col col1">
+          <p class="bas">RACING</p>
+          <p class="p">Scuderia Ferrari HP</p>
+          <p class="p">Charles Leclerc</p>
+          <p class="p">Lewis Hamilton</p>
+          <p class="p">Hypercar</p>
+          <p class="p">GT Series</p>
+          <p class="p">Hypersail</p>
+          <p class="p">Esports</p>
+          <p class="p">Scuderia Ferrari Driver<br />Academy</p>
+          <p class="p">Scuderia Ferrari Member</p>
+        </div>
+        <div class="col col2">
+          <p class="bas">SPORTS CAR</p>
+          <p class="p">Range</p>
+          <p class="p">Configure your Ferrari</p>
+          <p class="p">MyFerrari</p>
+          <p class="p">Pre-owned</p>
+          <p class="p">Dealers</p>
+          <p class="p">Recall information</p>
+          <p class="p">Techinfo</p>
+        </div>
+        <div class="col col3">
+          <p class="bas">COLLECTIONS</p>
+          <p class="p">Men</p>
+          <p class="p">Women</p>
+          <p class="p">Kids</p>
+          <p class="p">Shoes</p>
+          <p class="p">Eyewear</p>
+          <p class="p">Collectibles</p>
+          <p class="p">Scuderia Ferrari Selection</p>
+        </div>
+        <div class="col col4">
+          <p class="bas">EXPERIENCES</p>
+          <p class="p">Corse Clienti</p>
+          <p class="p">Ferrari Esports Sreies</p>
+          <p class="p">Ristorante Cavallino</p>
+          <p class="p">Ferrari museums</p>
+          <p class="p">Ferrari World Abu Dhabi</p>
+          <p class="p">Ferrari Land Barcelona</p>
+        </div>
+        <div class="col col5">
+          <p class="bas">ABOUT US</p>
+          <p class="p">Corporate</p>
+          <p class="p">Sustainability</p>
+          <p class="p">Media Centre</p>
+          <p class="p">News</p>
+          <p class="p">Magazine</p>
+          <p class="p">History</p>
+          <p class="p">Join us</p>
+        </div>
+      </div>
+
+      <!-- FOOTER-2 -->
+      <div class="foot">
+        <div class="social">
+          <div class="rows">
+            <img src="facebook.avif" />
+            <p>facebook</p>
+          </div>
+        </div>
+        <div class="social">
+          <div class="rows">
+            <img src="twitch.svg" />
+            <p>twitch</p>
+          </div>
+        </div>
+        <div class="social">
+          <div class="rows">
+            <img src="instagram.avif" />
+            <p>instagram</p>
+          </div>
+        </div>
+        <div class="social">
+          <div class="rows">
+            <img src="tiktok.svg" />
+            <p>tiktok</p>
+          </div>
+        </div>
+        <div class="social">
+          <div class="rows">
+            <img src="youtube.avif" />
+            <p>youtube</p>
+          </div>
+        </div>
+      </div>
+      <!-- FOOT-BOTTOM -->
+      <div class="foot-bottom">
+        <div class="paragraph">
+          <p>
+            Ferrari N.V. - Holding company - A company under Dutch law, having
+            its official seat in Amsterdam, the Netherlands and its corporate
+            address at<br />
+            Via Abetone Inferiore No. 4, I-41053 Maranello (MO), Italy,
+            registered with the Dutch trade register under number 64060977
+          </p>
+          <p>
+            Ferrari S.p.A. - A company under Italian law, having its registered
+            office at Via Emilia Est No. 1163, Modena,<br />
+            Italy, Companies’ Register of Modena, VAT and Tax number 00159560366
+            and share capital of Euro 20,260,000
+          </p>
+          <p>Copyright 2025 - All rights reserved</p>
+        </div>
+        <div class="access">
+          <p>ACCESSIBILITY SETTINGS</p>
+        </div>
+      </div>
+
+      <!-- PRE-END -->
+      <div class="pre-end">
+        <div class="in-row">
+          <p>Legal</p>
+          <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+          <p>Accessibility</p>
+          <p>Submit your privacy request</p>
+          <p>Contacts</p>
+          <p>Corporate ENG</p>
+          <p>Corporate ITA</p>
+          <span>KAZAKHSTAN</span>
+        </div>
+        <div class="in-row">
+          <p>Responsible Disclosure</p>
+          <p>Reward Anticounterfeiting</p>
+          <p>Media Centre</p>
+        </div>
+      </div>
+
+      <!-- END -->
+      <div class="end">
+        <img src="foot-logo.avif" />
+      </div>
+    </div>
+
+    <!-- <div id="cars">
+      <p>FFFFFFF</p>
+      <span onclick="goToPage1()">p</span>
+    </div> -->
+  </body>
+
+  <!-- FERRARI-CARS -->
+  <div id="page1" style="display: none">
+    <video autoplay loop muted playsinline class="video">
+      <source src="video/amalfi.mp4" type="video/mp4" />
+    </video>
+    <div class="head-cars">
+      <img src="logo.png" />
+      <h2>racing</h2>
+      <h2 class="line">sports cars</h2>
+      <h2>collections</h2>
+      <h2>impressions</h2>
+      <h2>about us</h2>
+      <button onclick="showMain()">Main page</button>
+    </div>
+    <div class="line-up">
+      <h1>FERRARI LINE-UP</h1>
+    </div>
+
+    <!-- CARS-------------------------------------------- -->
+    <div class="car car1">
+      <div class="name">
+        <p>1</p>
+        <p class="lines"></p>
+        <p>supercars</p>
+      </div>
+      <div class="row-car">
+        <div class="img-car"><img src="img-car/car-f80.avif" /></div>
+        <div class="info-car">
+          <img src="img-car/f80.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari f80</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAR-2 -->
+    <div class="car car2">
+      <div class="name">
+        <p>2</p>
+        <p class="lines"></p>
+        <p>LINE-UP</p>
+      </div>
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/849.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the 849 testarossa</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/849-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-3 -->
+    <div class="car car3">
+      <div class="row-car">
+        <div class="img-car"><img src="img-car/spider-car.avif" /></div>
+        <div class="info-car">
+          <img src="img-car/spider.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the 849 testarossa spider</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAR-4 -->
+    <div class="car car4">
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/296.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the 296gtb</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/296-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-5 -->
+    <div class="car car5">
+      <div class="row-car">
+        <div class="img-car"><img src="img-car/296-blue-car.avif" /></div>
+        <div class="info-car">
+          <img src="img-car/296-blue.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the 296 gts</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAR-6 -->
+    <div class="car car6">
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/12-cilin-red.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari 12cilindri</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/12-cilin-red-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-7 -->
+    <div class="car car7">
+      <div class="row-car">
+        <div class="img-car"><img src="img-car/12-cilin-car.avif" /></div>
+        <div class="info-car">
+          <img src="img-car/12-cilin.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari 12cilindri spider</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAR-8 -->
+    <div class="car car8">
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/puros.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari purosangue</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/puros-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-9 -->
+    <div class="car car9">
+      <div class="row-car">
+        <div class="img-car"><img src="img-car/amal-car.avif" /></div>
+        <div class="info-car">
+          <img src="img-car/amal.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari amalfi</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAR-10 -->
+    <div class="car car10">
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/roma.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari roma spider</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>request information</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/roma-car.avif" /></div>
+      </div>
+    </div>
+    <!-- SPECIAL SERIES -->
+    <!-- CAR-11 -->
+    <div class="car car11">
+      <div class="name">
+        <p>3</p>
+        <p class="lines"></p>
+        <p>special series</p>
+      </div>
+      <div class="series"><h1>SPECIAL SERIES</h1></div>
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/special-296.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the 296 special</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/special-296-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-12 -->
+    <div class="car car12">
+      <div class="row-car">
+        <div class="img-car">
+          <img src="img-car/special-red-296-car.avif" />
+        </div>
+        <div class="info-car">
+          <img src="img-car/special-red-296.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the 296 special a</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAR-13 -->
+    <div class="car car13">
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/sf90.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the sf90 xx stradale</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/sf90-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-14 -->
+    <div class="car car14">
+      <div class="row-car">
+        <div class="img-car">
+          <img src="img-car/sf90-blue-car.avif" />
+        </div>
+        <div class="info-car">
+          <img src="img-car/sf90-blue.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the sf90 xx spider</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CAR-15 -->
+    <div class="car car15">
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/812.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari 812 competizione</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/812-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-16 -->
+    <div class="car car16">
+      <div class="row-car">
+        <div class="img-car">
+          <img src="img-car/812-yellow-car.avif" />
+        </div>
+        <div class="info-car">
+          <img src="img-car/812-yelllow.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari 812 competizione a</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ICONA CARS -->
+    <!-- CAR-17 -->
+    <div class="car car17">
+      <div class="name">
+        <p>4</p>
+        <p class="lines"></p>
+        <p>icona</p>
+      </div>
+      <div class="series"><h1>ICONA</h1></div>
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/daytona.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari daytona sp3</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/daytona-car.avif" /></div>
+      </div>
+    </div>
+    <!-- CAR-18 -->
+    <div class="car car18">
+      <div class="row-car">
+        <div class="img-car">
+          <img src="img-car/monza-car.avif" />
+        </div>
+        <div class="info-car">
+          <img src="img-car/monza.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari monza sp1</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAR-19 -->
+    <div class="car car19">
+      <div class="row-car">
+        <div class="info-car">
+          <img src="img-car/monza-black.avif" />
+          <div class="row-dis">
+            <span>></span>
+            <p>discover the ferrari monza sp2</p>
+          </div>
+          <div class="row-dis">
+            <span>></span>
+            <p>build your own</p>
+          </div>
+        </div>
+        <div class="img-car"><img src="img-car/monza-black-car.avif" /></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+      <h2>Newsletter</h2>
+      <p>Stay up to date with the latest news from the world of Ferrari.</p>
+      <button>Subscribe</button>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="col col1">
+        <p class="bas">RACING</p>
+        <p class="p">Scuderia Ferrari HP</p>
+        <p class="p">Charles Leclerc</p>
+        <p class="p">Lewis Hamilton</p>
+        <p class="p">Hypercar</p>
+        <p class="p">GT Series</p>
+        <p class="p">Hypersail</p>
+        <p class="p">Esports</p>
+        <p class="p">Scuderia Ferrari Driver<br />Academy</p>
+        <p class="p">Scuderia Ferrari Member</p>
+      </div>
+      <div class="col col2">
+        <p class="bas">SPORTS CAR</p>
+        <p class="p">Range</p>
+        <p class="p">Configure your Ferrari</p>
+        <p class="p">MyFerrari</p>
+        <p class="p">Pre-owned</p>
+        <p class="p">Dealers</p>
+        <p class="p">Recall information</p>
+        <p class="p">Techinfo</p>
+      </div>
+      <div class="col col3">
+        <p class="bas">COLLECTIONS</p>
+        <p class="p">Men</p>
+        <p class="p">Women</p>
+        <p class="p">Kids</p>
+        <p class="p">Shoes</p>
+        <p class="p">Eyewear</p>
+        <p class="p">Collectibles</p>
+        <p class="p">Scuderia Ferrari Selection</p>
+      </div>
+      <div class="col col4">
+        <p class="bas">EXPERIENCES</p>
+        <p class="p">Corse Clienti</p>
+        <p class="p">Ferrari Esports Sreies</p>
+        <p class="p">Ristorante Cavallino</p>
+        <p class="p">Ferrari museums</p>
+        <p class="p">Ferrari World Abu Dhabi</p>
+        <p class="p">Ferrari Land Barcelona</p>
+      </div>
+      <div class="col col5">
+        <p class="bas">ABOUT US</p>
+        <p class="p">Corporate</p>
+        <p class="p">Sustainability</p>
+        <p class="p">Media Centre</p>
+        <p class="p">News</p>
+        <p class="p">Magazine</p>
+        <p class="p">History</p>
+        <p class="p">Join us</p>
+      </div>
+    </div>
+
+    <!-- FOOTER-2 -->
+    <div class="foot">
+      <div class="social">
+        <div class="rows">
+          <img src="facebook.avif" />
+          <p>facebook</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="twitch.svg" />
+          <p>twitch</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="instagram.avif" />
+          <p>instagram</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="tiktok.svg" />
+          <p>tiktok</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="youtube.avif" />
+          <p>youtube</p>
+        </div>
+      </div>
+    </div>
+    <!-- FOOT-BOTTOM -->
+    <div class="foot-bottom">
+      <div class="paragraph">
+        <p>
+          Ferrari N.V. - Holding company - A company under Dutch law, having its
+          official seat in Amsterdam, the Netherlands and its corporate address
+          at<br />
+          Via Abetone Inferiore No. 4, I-41053 Maranello (MO), Italy, registered
+          with the Dutch trade register under number 64060977
+        </p>
+        <p>
+          Ferrari S.p.A. - A company under Italian law, having its registered
+          office at Via Emilia Est No. 1163, Modena,<br />
+          Italy, Companies’ Register of Modena, VAT and Tax number 00159560366
+          and share capital of Euro 20,260,000
+        </p>
+        <p>Copyright 2025 - All rights reserved</p>
+      </div>
+      <div class="access">
+        <p>ACCESSIBILITY SETTINGS</p>
+      </div>
+    </div>
+
+    <!-- PRE-END -->
+    <div class="pre-end">
+      <div class="in-row">
+        <p>Legal</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+        <p>Accessibility</p>
+        <p>Submit your privacy request</p>
+        <p>Contacts</p>
+        <p>Corporate ENG</p>
+        <p>Corporate ITA</p>
+        <span>KAZAKHSTAN</span>
+      </div>
+      <div class="in-row">
+        <p>Responsible Disclosure</p>
+        <p>Reward Anticounterfeiting</p>
+        <p>Media Centre</p>
+      </div>
+    </div>
+
+    <!-- END -->
+    <div class="end">
+      <img src="foot-logo.avif" />
+    </div>
+  </div>
+
+  <!-- RACING FORMULA1 LECLERC I VSE DRUGIE -->
+  <div id="page2" style="display: none">
+    <video autoplay loop muted playsinline class="video">
+      <source src="video/ferrari.MP4" type="video/mp4" />
+    </video>
+    <div class="head-cars">
+      <img src="logo.png" />
+      <h2 class="line">racing</h2>
+      <h2>sports cars</h2>
+      <h2>collections</h2>
+      <h2>impressions</h2>
+      <h2>about us</h2>
+      <button onclick="showMain()">Main page</button>
+    </div>
+    <div class="line-up">
+      <h1>FORMULA 1</h1>
+    </div>
+    <div class="team">
+      <div class="f1 f1-1">
+        <img
+          src="https://cdn.ferrari.com/cms/network/media/img/resize/67dc4914a91acb00209970c9-ferrari-2025-driver-leclerc_d-ambipar?width=960&height=650"
+        />
+        <div class="f1">
+          <h1>CHARLES LECLERC</h1>
+          <div class="discover-row">
+            <p>discover</p>
+            <span>></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="f1 f1-2">
+        <img
+          src="https://cdn.ferrari.com/cms/network/media/img/resize/67ac76b04ffb61001005480c-ferrari-2025-driver-hamilton-d?width=960&height=650"
+        />
+        <div class="f1">
+          <h1>LEWIS HAMILTON</h1>
+          <div class="discover-row">
+            <p>discover</p>
+            <span>></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest-news">
+      <h1>LATEST NEWS</h1>
+      <div class="news">
+        <div class="new new1">
+          <img
+            class="img"
+            src="https://ferrari.scene7.com/is/image/ferrari/LAND-azerbaijan-grand-prix-2025-sunday-report"
+          />
+          <img class="share" src="share.png" />
+          <div class="race-info">
+            <div class="row-name">
+              <p>6 days</p>
+              <span></span>
+              <p>azerbaijan gp</p>
+            </div>
+            <h1>
+              a long and complicated <br />
+              qualifying
+            </h1>
+          </div>
+        </div>
+        <div class="new new2">
+          <img
+            class="img"
+            src="https://ferrari.scene7.com/is/image/ferrari/LAND-azerbaijan-grand-prix-2025-saturday-report"
+          />
+          <img class="share" src="share.png" />
+          <div class="race-info">
+            <div class="row-name">
+              <p>7 days</p>
+              <span></span>
+              <p>azerbaijan gp</p>
+            </div>
+            <h1>
+              a sunday below<br />
+              expectations
+            </h1>
+          </div>
+        </div>
+        <div class="new new3">
+          <img
+            class="img"
+            src="https://ferrari.scene7.com/is/image/ferrari/azerbajan-gp-fp-land"
+          />
+          <img class="share" src="share.png" />
+          <div class="race-info">
+            <div class="row-name">
+              <p>19 sep</p>
+              <span></span>
+              <p>azerbaijan gp</p>
+            </div>
+            <h1>a constructive day</h1>
+          </div>
+        </div>
+      </div>
+      <div class="view-all">
+        <p>view all</p>
+        <span>></span>
+      </div>
+    </div>
+    <!-- /* NEXT RACE START IN */ -->
+
+    <div class="next-race">
+      <div class="bashka">
+        <h1>2025 championship</h1>
+      </div>
+      <div class="gallery">
+        <!-- CHEMP-1 -->
+        <div class="chemp">
+          <div class="flag-row">
+            <img src="img-f1-race/singapor-flag.avif" class="flag" />
+            <div class="info-chemp">
+              <p>03 - 05 october</p>
+              <h2>Singapore Grand Prix</h2>
+            </div>
+          </div>
+          <img src="img-f1-race/singapore.avif" class="place" />
+        </div>
+        <!-- CHEMP-2 -->
+        <div class="chemp">
+          <div class="flag-row">
+            <img src="img-f1-race/usa-flag.avif" class="flag" />
+            <div class="info-chemp">
+              <p>17 - 19 october</p>
+              <h2>United States Grand Prix</h2>
+            </div>
+          </div>
+          <img src="img-f1-race/usa-grand.avif" class="place" />
+        </div>
+        <!-- CHEMP-3 -->
+        <div class="chemp">
+          <div class="flag-row">
+            <img src="img-f1-race/mexico-flag.avif" class="flag" />
+            <div class="info-chemp">
+              <p>24 - 26 october</p>
+              <h2>Mexico City Grand Prix</h2>
+            </div>
+          </div>
+          <img src="img-f1-race/mexico.avif" class="place" />
+        </div>
+        <!-- CHEMP-4 -->
+        <div class="chemp">
+          <div class="flag-row">
+            <img src="img-f1-race/brazil-flag.avif" class="flag" />
+            <div class="info-chemp">
+              <p>07 -09 november</p>
+              <h2>Sao Paulo Grand Prix</h2>
+            </div>
+          </div>
+          <img src="img-f1-race/sao-paulo.avif" class="place" />
+        </div>
+
+        <!-- CHEMP-6 -->
+        <div class="chemp">
+          <div class="flag-row">
+            <img src="img-f1-race/usa-flag.avif" class="flag" />
+            <div class="info-chemp">
+              <p>20 - 22 november</p>
+              <h2>Las Vegas Grand Prix</h2>
+            </div>
+          </div>
+          <img src="img-f1-race/las-vegas.avif" class="place" />
+        </div>
+
+        <!-- CHEMP-7 -->
+        <div class="chemp">
+          <div class="flag-row">
+            <img src="img-f1-race/qatar-flag.avif" class="flag" />
+            <div class="info-chemp">
+              <p>28 - 30 november</p>
+              <h2>Qatar World Grand Prix</h2>
+            </div>
+          </div>
+          <img src="img-f1-race/qatar.avif" class="place" />
+        </div>
+        <!-- CHEMP-8 -->
+        <div class="chemp">
+          <div class="flag-row">
+            <img src="img-f1-race/flag-abu-dhabi.avif" class="flag" />
+            <div class="info-chemp">
+              <p>05 - 07 december</p>
+              <h2>Abu Dhabi Grand Prix</h2>
+            </div>
+          </div>
+          <img src="img-f1-race/sao-paulo.avif" class="place" />
+        </div>
+      </div>
+      <div class="collabarate"><img src="" /></div>
+    </div>
+    <!-- FOOTER -->
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+      <h2>Newsletter</h2>
+      <p>Stay up to date with the latest news from the world of Ferrari.</p>
+      <button>Subscribe</button>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="col col1">
+        <p class="bas">RACING</p>
+        <p class="p">Scuderia Ferrari HP</p>
+        <p class="p">Charles Leclerc</p>
+        <p class="p">Lewis Hamilton</p>
+        <p class="p">Hypercar</p>
+        <p class="p">GT Series</p>
+        <p class="p">Hypersail</p>
+        <p class="p">Esports</p>
+        <p class="p">Scuderia Ferrari Driver<br />Academy</p>
+        <p class="p">Scuderia Ferrari Member</p>
+      </div>
+      <div class="col col2">
+        <p class="bas">SPORTS CAR</p>
+        <p class="p">Range</p>
+        <p class="p">Configure your Ferrari</p>
+        <p class="p">MyFerrari</p>
+        <p class="p">Pre-owned</p>
+        <p class="p">Dealers</p>
+        <p class="p">Recall information</p>
+        <p class="p">Techinfo</p>
+      </div>
+      <div class="col col3">
+        <p class="bas">COLLECTIONS</p>
+        <p class="p">Men</p>
+        <p class="p">Women</p>
+        <p class="p">Kids</p>
+        <p class="p">Shoes</p>
+        <p class="p">Eyewear</p>
+        <p class="p">Collectibles</p>
+        <p class="p">Scuderia Ferrari Selection</p>
+      </div>
+      <div class="col col4">
+        <p class="bas">EXPERIENCES</p>
+        <p class="p">Corse Clienti</p>
+        <p class="p">Ferrari Esports Sreies</p>
+        <p class="p">Ristorante Cavallino</p>
+        <p class="p">Ferrari museums</p>
+        <p class="p">Ferrari World Abu Dhabi</p>
+        <p class="p">Ferrari Land Barcelona</p>
+      </div>
+      <div class="col col5">
+        <p class="bas">ABOUT US</p>
+        <p class="p">Corporate</p>
+        <p class="p">Sustainability</p>
+        <p class="p">Media Centre</p>
+        <p class="p">News</p>
+        <p class="p">Magazine</p>
+        <p class="p">History</p>
+        <p class="p">Join us</p>
+      </div>
+    </div>
+
+    <!-- FOOTER-2 -->
+    <div class="foot">
+      <div class="social">
+        <div class="rows">
+          <img src="facebook.avif" />
+          <p>facebook</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="twitch.svg" />
+          <p>twitch</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="instagram.avif" />
+          <p>instagram</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="tiktok.svg" />
+          <p>tiktok</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows">
+          <img src="youtube.avif" />
+          <p>youtube</p>
+        </div>
+      </div>
+    </div>
+    <!-- FOOT-BOTTOM -->
+    <div class="foot-bottom">
+      <div class="paragraph">
+        <p>
+          Ferrari N.V. - Holding company - A company under Dutch law, having its
+          official seat in Amsterdam, the Netherlands and its corporate address
+          at<br />
+          Via Abetone Inferiore No. 4, I-41053 Maranello (MO), Italy, registered
+          with the Dutch trade register under number 64060977
+        </p>
+        <p>
+          Ferrari S.p.A. - A company under Italian law, having its registered
+          office at Via Emilia Est No. 1163, Modena,<br />
+          Italy, Companies’ Register of Modena, VAT and Tax number 00159560366
+          and share capital of Euro 20,260,000
+        </p>
+        <p>Copyright 2025 - All rights reserved</p>
+      </div>
+      <div class="access">
+        <p>ACCESSIBILITY SETTINGS</p>
+      </div>
+    </div>
+
+    <!-- PRE-END -->
+    <div class="pre-end">
+      <div class="in-row">
+        <p>Legal</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+        <p>Accessibility</p>
+        <p>Submit your privacy request</p>
+        <p>Contacts</p>
+        <p>Corporate ENG</p>
+        <p>Corporate ITA</p>
+        <span>KAZAKHSTAN</span>
+      </div>
+      <div class="in-row">
+        <p>Responsible Disclosure</p>
+        <p>Reward Anticounterfeiting</p>
+        <p>Media Centre</p>
+      </div>
+    </div>
+
+    <!-- END -->
+    <div class="end">
+      <img src="foot-logo.avif" />
+    </div>
+  </div>
+
+  <!-- PAGE-3 FERRARI STORE -------------------------------------------------------------------->
+  <div id="page3" style="display: none">
+    <div class="fera-logo"><img src="logo.png" /></div>
+    <div class="store">
+      <div class="clothes-head">
+        <p style="color: red">fashion show ss 2026</p>
+        <p>new in</p>
+        <p>men</p>
+        <p>women</p>
+        <p>kids</p>
+        <p>eyewear</p>
+        <p>collectibles</p>
+        <p>gifts</p>
+        <p>lifestyle</p>
+        <button onclick="showMain()">Main page</button>
+      </div>
+      <div class="arrivals">
+        <h1 style="margin: 0px">NEW ARRIVALS</h1>
+      </div>
+      <div class="clothes">
+        <!-- odezhda-1 -->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwb88eb778/images/zoom/49840f_167_1.jpg?sw=796&sh=1014&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwa87f1226/images/zoom/49840f_167_2.jpg?sw=1000&sh=1274&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Coat in sable-effect alpaca</p>
+            <span>$6,500</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-2 -->
+        <div class="odezhda odezhda2">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw34e4a482/images/zoom/49839f_167_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwb23404fd/images/zoom/49839f_167_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Double-breasted coat in sable-effect alpaca</p>
+            <span>$4,200</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-3 -->
+        <div class="odezhda odezhda3">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwe7f84148/images/zoom/49703f_167_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw495a45f9/images/zoom/49703f_167_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Blouson in fil coupé</p>
+            <span>$3,500</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-4 -->
+        <div class="odezhda odezhda4">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw66fe6cd8/images/zoom/49836f_167_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw5bf8a2a5/images/zoom/49836f_167_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Trousers in fil coupé</p>
+            <span>$2,500</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-5 -->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw57b9aa65/images/zoom/49837f_167_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw74c70d54/images/zoom/49837f_167_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Short dress in fil coupé</p>
+            <span>$3,200</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-6 -->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwd6b29b43/images/zoom/49388f_163_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw36c46819/images/zoom/49388f_163_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Court shoes in wet-effect glossy leather</p>
+            <span>$1,100</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-7 -->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwbcdf91a4/images/zoom/49247f_166_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwa73fe961/images/zoom/49247f_166_5.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Peacoat in merino wool with astrakhan effect</p>
+            <span>$7,400</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-8 -->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwfc966d73/images/zoom/49511f_51_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw4b500e79/images/zoom/49511f_51_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Denim trousers</p>
+            <span>$990</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-9 -->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw4d66d159/images/zoom/49245f_166_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwc14b3e9d/images/zoom/49245f_166_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Merino wool coat with astrakhan effect</p>
+            <span>$8,900</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-10-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwcdc931c7/images/zoom/49783f_166_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwe664117c/images/zoom/49783f_166_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Silk jumper</p>
+            <span>$1,100</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-11-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw5005c9c8/images/zoom/49766f_11_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwb5adcbfd/images/zoom/49766f_11_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>La Ferrari Dino top handle bag in abraded leather</p>
+            <span>$1,790</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-12-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw2778dba6/images/zoom/49249f_166_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw92cb3522/images/zoom/49249f_166_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Peacoat in merino wool with astrakhan effect</p>
+            <span>$6,900</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-13-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw848ae07d/images/zoom/49768f_161_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwf274e26b/images/zoom/49768f_161_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Ferrari GT Soft shoulder bag in quilted leather</p>
+            <span>$2,900</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-14-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwe2fb7290/images/zoom/49770f_161_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwd108f64c/images/zoom/49243f_167_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Ferrari GT Soft shoulder bag in quilted leather</p>
+            <span>$1,790</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-15-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw2b411bad/images/zoom/49206f_113_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw93c4098a/images/zoom/49206f_113_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Coat in mélange wool twill</p>
+            <span>$3,900</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-16-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw25170bb1/images/zoom/50160f_157_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw70e47136/images/zoom/50160f_157_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Silk twill tie with regimental pattern</p>
+            <span>$190</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-17-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw3e2f0218/images/zoom/49808f_113_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw198ed786/images/zoom/49808f_113_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Double-breasted blazer in mélange wool</p>
+            <span>$2,500</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-18-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwb850b6c8/images/zoom/49809f_113_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwe87261aa/images/zoom/49827f_13_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Trousers in mélange wool twill</p>
+            <span>$1,300</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-19-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw72d0ccd6/images/zoom/49829f_13_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwa555aaa2/images/zoom/49829f_13_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Multistriped cotton shirt</p>
+            <span>$690</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-20-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw407d78f1/images/zoom/50084f_101_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw42c9a887/images/zoom/50084f_101_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Silk twill tie</p>
+            <span>$190</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-21-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw9a76774a/images/zoom/49827f_13_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwe87261aa/images/zoom/49827f_13_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Multistriped cotton shirt</p>
+            <span>$790</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-22-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw1ed92114/images/zoom/50084f_98_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwa85f0fa8/images/zoom/49809f_113_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Silk twill tie</p>
+            <span>$190</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-23-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw9cc0e2f8/images/zoom/49804f_113_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw65a98edb/images/zoom/49202f_113_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Blazer in Q-Cycle® mélange wool</p>
+            <span>$2,100</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-24-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwe3670c67/images/zoom/49801f_113_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw1756bf04/images/zoom/49801f_113_2.jpg?sw=796&sh=1014&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Skirt in pinstripe wool</p>
+            <span>$1,300</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-25-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw448bc83a/images/zoom/49806f_113_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw9dbfaa61/images/zoom/49806f_113_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Trousers in Q-Cycle® mélange wool</p>
+            <span>$1,200</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-26-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwe860d5d7/images/zoom/49202f_113_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw65a98edb/images/zoom/49202f_113_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Trousers in Q-Cycle® mélange wool</p>
+            <span>$1,200</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-27-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw616bb0e0/images/zoom/49294f_158_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw4c28402a/images/zoom/49294f_158_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Velvet-effect jersey top</p>
+            <span>$890</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-28-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw2d360655/images/zoom/49409f_158_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw4c28402a/images/zoom/49294f_158_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Velvet-effect jersey skirt</p>
+            <span>$1,100</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-29-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwfa673190/images/zoom/49239f_167_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw36ec913c/images/zoom/49239f_167_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Misted leather blazer</p>
+            <span>$9,500</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-30-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw8f8e64a7/images/zoom/49243f_167_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwd108f64c/images/zoom/49243f_167_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Misted leather mini skirt</p>
+            <span>$5,900</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-31-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwf6ff931d/images/zoom/49622f_163_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw0ad9d741/images/zoom/49622f_163_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>La Ferrari Dino top handle bag in cowhide-effect leather</p>
+            <span>$1,950</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-32-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw211daf04/images/zoom/49742f_163_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwf4e5314b/images/zoom/49742f_163_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Leather and cowhide sandals with fringes</p>
+            <span>$1,650</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-33-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw3a231a09/images/zoom/49760f_114_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwaa459583/images/zoom/49760f_114_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Ferrari keyring in gradient leather</p>
+            <span>$690</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-34-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwa5b58942/images/zoom/49763f_114_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw3a08966e/images/zoom/49763f_114_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>La Ferrari Dino bowling bag in gradient leather</p>
+            <span>$2,400</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-35-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwa2d5209e/images/zoom/49747f_114_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw0bdfaf81/images/zoom/49747f_114_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Running trainers in leather</p>
+            <span>$990</span>
+            <a>shop this</a>
+          </div>
+        </div>
+        <!-- kiim-36-->
+        <div class="odezhda odezhda1">
+          <div class="item">
+            <img
+              class="thing"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw8b82badb/images/zoom/49403f_01_1.jpg?sw=544&sh=692&strip=false"
+            />
+            <img
+              class="reference"
+              src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw150a9506/images/zoom/49403f_01_2.jpg?sw=544&sh=692&strip=false"
+            />
+          </div>
+          <div class="text">
+            <p>Running trainers in wet-effect leather</p>
+            <span>$850</span>
+            <a>shop this</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="content">
+        <h1>SUBSCRIBEBY EMAIL</h1>
+        <p>
+          Register to receive email updates on the latest collections, items,
+          services and events from Ferrari
+        </p>
+        <input type="text" placeholder="Email address" />
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer footer3">
+      <div class="col col1">
+        <p class="bas">RACING</p>
+        <p class="p">Scuderia Ferrari HP</p>
+        <p class="p">Charles Leclerc</p>
+        <p class="p">Lewis Hamilton</p>
+        <p class="p">Hypercar</p>
+        <p class="p">GT Series</p>
+        <p class="p">Hypersail</p>
+        <p class="p">Esports</p>
+        <p class="p">Scuderia Ferrari Driver<br />Academy</p>
+        <p class="p">Scuderia Ferrari Member</p>
+      </div>
+      <div class="col col2">
+        <p class="bas">SPORTS CAR</p>
+        <p class="p">Range</p>
+        <p class="p">Configure your Ferrari</p>
+        <p class="p">MyFerrari</p>
+        <p class="p">Pre-owned</p>
+        <p class="p">Dealers</p>
+        <p class="p">Recall information</p>
+        <p class="p">Techinfo</p>
+      </div>
+      <div class="col col3">
+        <p class="bas">COLLECTIONS</p>
+        <p class="p">Men</p>
+        <p class="p">Women</p>
+        <p class="p">Kids</p>
+        <p class="p">Shoes</p>
+        <p class="p">Eyewear</p>
+        <p class="p">Collectibles</p>
+        <p class="p">Scuderia Ferrari Selection</p>
+      </div>
+      <div class="col col4">
+        <p class="bas">EXPERIENCES</p>
+        <p class="p">Corse Clienti</p>
+        <p class="p">Ferrari Esports Sreies</p>
+        <p class="p">Ristorante Cavallino</p>
+        <p class="p">Ferrari museums</p>
+        <p class="p">Ferrari World Abu Dhabi</p>
+        <p class="p">Ferrari Land Barcelona</p>
+      </div>
+      <div class="col col5">
+        <p class="bas">ABOUT US</p>
+        <p class="p">Corporate</p>
+        <p class="p">Sustainability</p>
+        <p class="p">Media Centre</p>
+        <p class="p">News</p>
+        <p class="p">Magazine</p>
+        <p class="p">History</p>
+        <p class="p">Join us</p>
+      </div>
+    </div>
+
+    <!-- FOOTER-2 -->
+    <div class="foot foot3">
+      <div class="social">
+        <div class="rows rows3">
+          <img src="facebook.avif" />
+          <p>facebook</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows rows3">
+          <img src="twitch.svg" />
+          <p>twitch</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows rows3">
+          <img src="instagram.avif" />
+          <p>instagram</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows rows3">
+          <img src="tiktok.svg" />
+          <p>tiktok</p>
+        </div>
+      </div>
+      <div class="social">
+        <div class="rows rows3">
+          <img src="youtube.avif" />
+          <p>youtube</p>
+        </div>
+      </div>
+    </div>
+    <!-- FOOT-BOTTOM -->
+    <div class="foot-bottom foot-bottom3">
+      <div class="paragraph">
+        <p>
+          Ferrari N.V. - Holding company - A company under Dutch law, having its
+          official seat in Amsterdam, the Netherlands and its corporate address
+          at<br />
+          Via Abetone Inferiore No. 4, I-41053 Maranello (MO), Italy, registered
+          with the Dutch trade register under number 64060977
+        </p>
+        <p>
+          Ferrari S.p.A. - A company under Italian law, having its registered
+          office at Via Emilia Est No. 1163, Modena,<br />
+          Italy, Companies’ Register of Modena, VAT and Tax number 00159560366
+          and share capital of Euro 20,260,000
+        </p>
+        <p>Copyright 2025 - All rights reserved</p>
+      </div>
+      <div class="access">
+        <p>ACCESSIBILITY SETTINGS</p>
+      </div>
+    </div>
+
+    <!-- PRE-END -->
+    <div class="pre-end pre-end3">
+      <div class="in-row">
+        <p>Legal</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+        <p>Accessibility</p>
+        <p>Submit your privacy request</p>
+        <p>Contacts</p>
+        <p>Corporate ENG</p>
+        <p>Corporate ITA</p>
+        <span>KAZAKHSTAN</span>
+      </div>
+      <div class="in-row">
+        <p>Responsible Disclosure</p>
+        <p>Reward Anticounterfeiting</p>
+        <p>Media Centre</p>
+      </div>
+    </div>
+
+    <!-- END -->
+    <div class="end end3">
+      <img src="foot-logo.avif" />
+    </div>
+  </div>
+  <script>
+    // HEADING PEREHOD
+    function showPage(pageId) {
+      document.getElementById("container").style.display = "none";
+
+      document.querySelectorAll("#page1, #page2, #page3").forEach((p) => {
+        p.style.display = "none";
+      });
+
+      document.getElementById(pageId).style.display = "block";
+    }
+    const videos = [
+      {
+        src: "video/amalfi.mp4",
+        heading: "Sports Car",
+        info: "START YOUR ENGINE",
+        pageId: "page1",
+      },
+      {
+        src: "video/ferrari.mp4",
+        heading: "Racing",
+        info: "SCUDERIA FERRARI",
+        pageId: "page2",
+      },
+      {
+        src: "video/present.mp4",
+        heading: "Collections",
+        info: "NEW FERRARI FW 25 CHAMPION",
+        pageId: "page3",
+      },
+    ];
+    const discoverBtn = document.querySelector(".row");
+
+    discoverBtn.addEventListener("click", () => {
+      document.getElementById("container").style.display = "none";
+      document.getElementById(videos[currentIndex].pageId).style.display =
+        "block";
+    });
+
+    function showMain() {
+      document.getElementById("container").style.display = "block";
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "none";
+      document.getElementById("page3").style.display = "none";
+    }
+
+    let currentIndex = 0;
+    const mainVideo = document.getElementById("mainVideo");
+    const heading = document.getElementById("heading");
+    const info = document.getElementById("info");
+
+    function changeVideo(index) {
+      currentIndex = index;
+      mainVideo.src = videos[currentIndex].src;
+      heading.textContent = videos[currentIndex].heading;
+      info.textContent = videos[currentIndex].info;
+      mainVideo.play();
+    }
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % videos.length;
+      changeVideo(currentIndex);
+    }, 25000);
+  </script>
+</html>
