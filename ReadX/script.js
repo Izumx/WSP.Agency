@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrambleTextPlugin);
+// gsap.registerPlugin(ScrambleTextPlugin); // Paid plugin removed
 
 const gsapCards = document.querySelectorAll('.gsap-card');
 
@@ -65,15 +65,20 @@ gsapCards.forEach((card, idx) => {
   });
 });
 
-gsap.to("#text", {
-  duration: 4,
-  delay: 2,
-  scrambleText: {
-    text: "Smart minds stack books, not excuses.",
-    leftToright: true,
-    chars: "iloveweb"
+// Standard animation instead of ScrambleText
+gsap.fromTo("#text",
+  { opacity: 0, y: 20 },
+  {
+    duration: 1.5,
+    delay: 2,
+    opacity: 1,
+    y: 0,
+    ease: "power2.out",
+    onStart: () => {
+      document.getElementById("text").textContent = "Smart minds stack books, not excuses.";
+    }
   }
-});
+);
 
 const heroCards = document.querySelectorAll('.hero-cards .card');
 heroCards.forEach(card => {
@@ -104,7 +109,7 @@ heroCards.forEach(card => {
 function makeInfinityCarousel(trackId, direction = 1, speed = 1) {
   const track = document.getElementById(trackId);
   const items = Array.from(track.children);
-  const itemHeight = items[0].offsetHeight + 28; 
+  const itemHeight = items[0].offsetHeight + 28;
   let position = direction > 0 ? 0 : itemHeight * items.length;
   let animationId;
 
@@ -130,8 +135,8 @@ function makeInfinityCarousel(trackId, direction = 1, speed = 1) {
 }
 
 
-makeInfinityCarousel('carousel-track-1', 0.6, 0.6);   
-makeInfinityCarousel('carousel-track-2', -0.6, 0.6);  
+makeInfinityCarousel('carousel-track-1', 0.6, 0.6);
+makeInfinityCarousel('carousel-track-2', -0.6, 0.6);
 const topBar = document.querySelector('.hero-top-bar');
 const whiteSections = document.querySelectorAll('.white-bg');
 
